@@ -4,5 +4,7 @@ block content
   h1= title
   a(href='./new') Post Message
   each message in  messages
-    p #{message.added}
+    p #{message.added_formatted}
     p #{message.user} : #{message.text}
+  else 
+    p No messages yet!
